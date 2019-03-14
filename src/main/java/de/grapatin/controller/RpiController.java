@@ -20,7 +20,7 @@ public class RpiController {
 
         if (pin == null) {
             GpioController gpioController = GpioFactory.getInstance();
-            pin = gpioController.provisionDigitalOutputPin(RaspiPin.GPIO_22, PinState.LOW);
+            pin = gpioController.provisionDigitalOutputPin(RaspiPin.GPIO_15, PinState.LOW);
         }
 
         pin.toggle();
